@@ -70,12 +70,13 @@
 }
 
 .grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   max-width: 800px;
   margin-top: 3rem;
+  display: flex;
+  float: right;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
 }
 
 .card {
@@ -106,6 +107,10 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
+}
+
+.card div{
+  float: right;
 }
 
 .logo {
