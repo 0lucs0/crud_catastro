@@ -138,6 +138,7 @@ export const resolvers = {
         pro_direccion,
         pro_telefono,
         pro_email,
+        id_pro_razon_social
       },
       _c
     ) => {
@@ -151,6 +152,7 @@ export const resolvers = {
             pro_direccion,
             pro_telefono,
             pro_email,
+            id_pro_razon_social
           })
           .returning("*")
       )[0];
@@ -169,7 +171,7 @@ export const resolvers = {
       return (
         await db
           .delete("*")
-          .from("predios")
+          .from("propietarios")
           .where({ id_propietario })
           .returning("*")
       )[0];
@@ -191,7 +193,7 @@ export const resolvers = {
     ) => {
       return (
         await db
-          .table("predios")
+          .table("propietarios")
           .where({ id_propietario })
           .update({
             pro_tipo_doc,

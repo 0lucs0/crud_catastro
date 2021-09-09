@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@apollo/client": "^3.4.10",
+    "@apollo/react-hooks": "^4.0.0",
+    "apollo-boost": "^0.4.9",
     "apollo-client": "^2.6.10",
     "apollo-server": "^3.3.0",
     "apollo-server-core": "^3.3.0",

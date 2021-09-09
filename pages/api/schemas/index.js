@@ -13,7 +13,7 @@ export const typeDefs = gql`
   }
 
   type Propietarios {
-    id_proietario: Int
+    id_propietario: Int
     pro_tipo_doc: String!
     pro_doc: Int!
     pro_nombre: String
@@ -104,12 +104,12 @@ export const typeDefs = gql`
       pro_direccion: String!
       pro_telefono: Int!
       pro_email: String
-      id__pro_razon_social: Int!
+      id__pro_razon_social: Int
     ): Propietarios
-    verPropietario(id_proietario: ID!): Propietarios
-    borrarPropietario(id_proietario: ID!): Propietarios
+    verPropietario(id_propietario: ID!): Propietarios
+    borrarPropietario(id_propietario: ID!): Propietarios
     modificarPropietario(
-      id_proietario: ID!
+      id_propietario: ID!
       pro_tipo_doc: String
       pro_doc: Int
       pro_nombre: String
