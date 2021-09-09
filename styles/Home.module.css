@@ -70,7 +70,7 @@
 }
 
 .grid {
-  max-width: 800px;
+  max-width: 100%;
   margin-top: 3rem;
   display: flex;
   float: right;
@@ -88,7 +88,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
+  width: 50%;
 }
 
 .card:hover,
